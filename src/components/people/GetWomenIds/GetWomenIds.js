@@ -6,7 +6,7 @@ function GetWomenIds({ id }) {
   const arr = [];
   for (let i = 0; i < peopleData.woman.length; i++) {
     for (let j = 0; j < peopleData.man[id].partner.length; j++) {
-      if (i == j) {
+      if (i == peopleData.man[id].partner[j]) {
         arr.push(peopleData.woman[i]);
       }
     }
