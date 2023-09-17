@@ -5,7 +5,9 @@ function GetWomanIdS({ id }) {
   return (
     <>
       <div>
-        <a href={`/W/${person.id}`}>{person.name}</a>
+        <a href={`/W/${person.id}`}>
+          {person.id} {person.name} {person.age}
+        </a>
       </div>
     </>
   );
