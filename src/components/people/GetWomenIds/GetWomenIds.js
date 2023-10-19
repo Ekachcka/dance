@@ -1,15 +1,15 @@
 import React, { useState } from "react";
 import doSort from "../../../functions/doSort/doSort";
 import GetWomanIdS from "../GetWomanIdS/GetWomanIdS";
-function GetWomenIds({ id }) {
+function GetWomenIds({ id, peopleData }) {
   const [Sort, setSort] = useState("id");
 
   return (
     <>
       <ul>
-        {doSort(Sort, id).map((i) => (
+        {doSort(Sort, id, peopleData).map((i) => (
           <li key={i.id}>
-            <GetWomanIdS id={i.id} />
+            <GetWomanIdS id={i.id} peopleData={peopleData} />
           </li>
         ))}
       </ul>

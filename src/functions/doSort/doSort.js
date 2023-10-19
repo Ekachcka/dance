@@ -1,5 +1,4 @@
-import peopleData from "../../components/people/people.json";
-function doSort(Sort, id) {
+function doSort(Sort, id, peopleData) {
   const arr = [];
   for (let i = 0; i < peopleData.woman.length; i++) {
     for (let j = 0; j < peopleData.man[id].partner.length; j++) {

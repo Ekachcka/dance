@@ -3,18 +3,18 @@ import GetManId from "../../components/people/GetManId/GetManId";
 import GetWomanId from "../../components/people/GetWomanId/GetWomanId";
 import { useParams } from "react-router-dom";
 import GetWomenIds from "../../components/people/GetWomenIds/GetWomenIds";
-function ManPage() {
+function ManPage({ peopleData }) {
   const params = useParams();
   return (
     <>
       {params.p == "M" ? (
         <>
-          <GetManId id={params.id} />
-          <GetWomenIds id={params.id} />
+          <GetManId id={params.id} peopleData={peopleData} />
+          <GetWomenIds id={params.id} peopleData={peopleData} />
         </>
       ) : (
         <>
-          <GetWomanId id={params.id} />
+          <GetWomanId id={params.id} peopleData={peopleData} />
         </>
       )}
     </>

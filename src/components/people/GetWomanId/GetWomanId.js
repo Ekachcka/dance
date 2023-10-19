@@ -1,5 +1,4 @@
-import peopleData from "../people.json";
-function GetWomanId({ id }) {
+function GetWomanId({ id, peopleData }) {
   let person = peopleData.woman[id];
   return (
     <>

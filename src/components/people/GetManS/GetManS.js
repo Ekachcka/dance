@@ -1,22 +1,27 @@
 import React from "react";
-import peopleData from "../people.json";
 import { useState } from "react";
 import { Listbox } from "@headlessui/react";
+import AddPeople from "../AddPeople/AddPeople";
+import UpdatePeople from "../UpdatePeople/UpdatePeople";
+import DeletePeople from "../DeletePeople/DeletePeople";
 
 const people = [
-  { id: 0, name: "Man", index: "M" },
+  { id: 0, name: "All", index: "A" },
   { id: 1, name: "Woman", index: "W" },
-  { id: 3, name: "All", index: "A" },
+  { id: 2, name: "Man", index: "M" },
 ];
 const old = [
-  { id: 0, name: "<=25", index: "Y" },
+  { id: 0, name: "All", index: "A" },
   { id: 1, name: ">25", index: "O" },
-  { id: 3, name: "All", index: "A" },
+  { id: 2, name: "<=25", index: "Y" },
 ];
 let arr = [];
-function GetManS() {
+function GetManS({ peopleData }) {
   const [Sex, setSex] = useState(people[0]);
   const [Age, setAge] = useState(old[0]);
+  const [Add, setAdd] = useState();
+  const [Update, setUpdate] = useState();
+  const [Delete, setDelete] = useState();
   let p = [];
   if (Sex.index == "M") {
     p = peopleData.man;
@@ -80,6 +85,63 @@ function GetManS() {
             ))}
           </Listbox.Options>
         </Listbox>
+        <button
+          onClick={() => {
+            setAdd("m");
+          }}
+        >
+          add man
+        </button>
+        <button
+          onClick={() => {
+            setAdd("w");
+          }}
+        >
+          add woman
+        </button>
+        {Add != undefined ? (
+          <AddPeople Add={Add} setAdd={setAdd} peopleData={peopleData} />
+        ) : (
+          <></>
+        )}
+        <div>
+          <button
+            onClick={() => {
+              setUpdate("a");
+            }}
+          >
+            Update
+          </button>
+          {Update != undefined ? (
+            <UpdatePeople
+              Update={Update}
+              setUpdate={setUpdate}
+              peopleData={peopleData}
+              arr={arr}
+            />
+          ) : (
+            <></>
+          )}
+        </div>
+        <div>
+          <button
+            onClick={() => {
+              setDelete("a");
+            }}
+          >
+            Delete
+          </button>
+          {Delete != undefined ? (
+            <DeletePeople
+              Update={Delete}
+              setUpdate={setDelete}
+              peopleData={peopleData}
+              arr={arr}
+            />
+          ) : (
+            <></>
+          )}
+        </div>
       </div>
     </>
   );

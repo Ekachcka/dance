@@ -1,6 +1,5 @@
 import React from "react";
-import peopleData from "../people.json";
-function GetWomanIdS({ id }) {
+function GetWomanIdS({ id, peopleData }) {
   let person = peopleData.woman[id];
   return (
     <>

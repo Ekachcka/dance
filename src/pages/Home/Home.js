@@ -1,9 +1,9 @@
 import React from "react";
 import GetManS from "../../components/people/GetManS/GetManS";
-function home() {
+function home({ peopleData }) {
   return (
     <>
-      <GetManS />
+      <GetManS peopleData={peopleData} />
     </>
   );
 }
