@@ -24,11 +24,19 @@ function GetManS({ peopleData }) {
   const [Delete, setDelete] = useState();
   let p = [];
   if (Sex.index == "M") {
-    p = peopleData.man;
+    for (let i = 0; i < peopleData.people.length; i++) {
+      if (peopleData.people[i].sex == "m") {
+        p.push(peopleData.people[i]);
+      }
+    }
   } else if (Sex.index == "W") {
-    p = peopleData.woman;
+    for (let i = 0; i < peopleData.people.length; i++) {
+      if (peopleData.people[i].sex == "w") {
+        p.push(peopleData.people[i]);
+      }
+    }
   } else if (Sex.index == "A") {
-    p = peopleData.man.concat(peopleData.woman);
+    p.push(...peopleData.people);
   }
   if (Age.index != "A") {
     arr = [];
@@ -55,13 +63,7 @@ function GetManS({ peopleData }) {
         <ul>
           {arr.map((person) => (
             <li key={person.id}>
-              <a
-                href={`/${person.partner != undefined ? "M" : "W"}/${
-                  person.id
-                }`}
-              >
-                {person.name}
-              </a>
+              <a href={`/${person.sex}/${person.id}`}>{person.name}</a>
             </li>
           ))}
         </ul>

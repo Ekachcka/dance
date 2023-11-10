@@ -1,5 +1,5 @@
 function GetWomanId({ id, peopleData }) {
-  let person = peopleData.woman[id];
+  let person = peopleData.people[id];
   return (
     <>
       <div>

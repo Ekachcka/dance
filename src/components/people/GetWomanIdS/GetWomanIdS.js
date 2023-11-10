@@ -1,6 +1,6 @@
 import React from "react";
 function GetWomanIdS({ id, peopleData }) {
-  let person = peopleData.woman[id];
+  let person = peopleData.people[id];
   return (
     <>
       <div>

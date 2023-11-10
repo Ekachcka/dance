@@ -1,10 +1,10 @@
 {
-  "man": [
+  "people": [
     {
       "id": 0,
       "name": "Platon",
       "age": "20",
-      "partner": [0, 2, 4],
+      "sex": "M",
       "shortDescription": "Lorem ipsum dolor sit amet. ",
       "description": "Lorem ipsum dolor sit amet. Non dolorem libero rem modi animi ab exercitationem ullam ut sapiente vero qui laudantium soluta vel Quis blanditiis non libero exercitationem. Ea recusandae fugiat rem vitae consequatur est placeat aliquam aut voluptatum minus."
     },
@@ -12,7 +12,7 @@
       "id": 1,
       "name": "Constantine",
       "age": "32",
-      "partner": [0, 1, 2],
+      "sex": "M",
       "shortDescription": "Lorem ipsum dolor sit amet. ",
       "description": "Lorem ipsum dolor sit amet. Non dolorem libero rem modi animi ab exercitationem ullam ut sapiente vero qui laudantium soluta vel Quis blanditiis non libero exercitationem. Ea recusandae fugiat rem vitae consequatur est placeat aliquam aut voluptatum minus."
     },
@@ -20,44 +20,47 @@
       "id": 2,
       "name": "Alexei",
       "age": "25",
-      "partner": [2, 3, 4],
-      "shortDescription": "Lorem ipsum dolor sit amet. ",
-      "description": "Lorem ipsum dolor sit amet. Non dolorem libero rem modi animi ab exercitationem ullam ut sapiente vero qui laudantium soluta vel Quis blanditiis non libero exercitationem. Ea recusandae fugiat rem vitae consequatur est placeat aliquam aut voluptatum minus."
-    }
-  ],
-  "woman": [
-    {
-      "id": 0,
-      "name": "Olya",
-      "age": "30",
-      "shortDescription": "Lorem ipsum dolor sit amet. ",
-      "description": "Lorem ipsum dolor sit amet. Non dolorem libero rem modi animi ab exercitationem ullam ut sapiente vero qui laudantium soluta vel Quis blanditiis non libero exercitationem. Ea recusandae fugiat rem vitae consequatur est placeat aliquam aut voluptatum minus."
-    },
-    {
-      "id": 1,
-      "name": "Tanya",
-      "age": "32",
-      "shortDescription": "Lorem ipsum dolor sit amet. ",
-      "description": "Lorem ipsum dolor sit amet. Non dolorem libero rem modi animi ab exercitationem ullam ut sapiente vero qui laudantium soluta vel Quis blanditiis non libero exercitationem. Ea recusandae fugiat rem vitae consequatur est placeat aliquam aut voluptatum minus."
-    },
-    {
-      "id": 2,
-      "name": "Natasha",
-      "age": "29",
+      "sex": "M",
       "shortDescription": "Lorem ipsum dolor sit amet. ",
       "description": "Lorem ipsum dolor sit amet. Non dolorem libero rem modi animi ab exercitationem ullam ut sapiente vero qui laudantium soluta vel Quis blanditiis non libero exercitationem. Ea recusandae fugiat rem vitae consequatur est placeat aliquam aut voluptatum minus."
     },
     {
       "id": 3,
-      "name": "Pauline",
-      "age": "25",
+      "name": "Olya",
+      "age": "30",
+      "sex": "W",
       "shortDescription": "Lorem ipsum dolor sit amet. ",
       "description": "Lorem ipsum dolor sit amet. Non dolorem libero rem modi animi ab exercitationem ullam ut sapiente vero qui laudantium soluta vel Quis blanditiis non libero exercitationem. Ea recusandae fugiat rem vitae consequatur est placeat aliquam aut voluptatum minus."
     },
     {
       "id": 4,
+      "name": "Tanya",
+      "age": "32",
+      "sex": "W",
+      "shortDescription": "Lorem ipsum dolor sit amet. ",
+      "description": "Lorem ipsum dolor sit amet. Non dolorem libero rem modi animi ab exercitationem ullam ut sapiente vero qui laudantium soluta vel Quis blanditiis non libero exercitationem. Ea recusandae fugiat rem vitae consequatur est placeat aliquam aut voluptatum minus."
+    },
+    {
+      "id": 5,
+      "name": "Natasha",
+      "age": "29",
+      "sex": "W",
+      "shortDescription": "Lorem ipsum dolor sit amet. ",
+      "description": "Lorem ipsum dolor sit amet. Non dolorem libero rem modi animi ab exercitationem ullam ut sapiente vero qui laudantium soluta vel Quis blanditiis non libero exercitationem. Ea recusandae fugiat rem vitae consequatur est placeat aliquam aut voluptatum minus."
+    },
+    {
+      "id": 6,
+      "name": "Pauline",
+      "age": "25",
+      "sex": "W",
+      "shortDescription": "Lorem ipsum dolor sit amet. ",
+      "description": "Lorem ipsum dolor sit amet. Non dolorem libero rem modi animi ab exercitationem ullam ut sapiente vero qui laudantium soluta vel Quis blanditiis non libero exercitationem. Ea recusandae fugiat rem vitae consequatur est placeat aliquam aut voluptatum minus."
+    },
+    {
+      "id": 7,
       "name": "Christina",
       "age": "20",
+      "sex": "W",
       "shortDescription": "Lorem ipsum dolor sit amet. ",
       "description": "Lorem ipsum dolor sit amet. Non dolorem libero rem modi animi ab exercitationem ullam ut sapiente vero qui laudantium soluta vel Quis blanditiis non libero exercitationem. Ea recusandae fugiat rem vitae consequatur est placeat aliquam aut voluptatum minus."
     }
